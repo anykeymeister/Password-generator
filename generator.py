@@ -6,7 +6,7 @@ def encrypt_string(chip_id):
         return ""
 
     try:
-        print(f"encrypt deviceID from setting: {chip_id}")
+        #print(f"encrypt deviceID from setting: {chip_id}")
 
         if len(chip_id) < 8:
             return chip_id
@@ -19,7 +19,7 @@ def encrypt_string(chip_id):
         if len(result) > 6:
             result = result[-6:]
 
-        print(f"encrypt result: {result}")
+        #print(f"encrypt result: {result}")
         return result
 
     except Exception as e:
@@ -28,4 +28,4 @@ def encrypt_string(chip_id):
 
 
 encrypted = encrypt_string(chip_id_input)
-print(f"Anykeymeister made this for you: {encrypted}")
+print(f"Anykeymeister made this code for you: {encrypted}")
